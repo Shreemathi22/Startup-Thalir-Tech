@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Products - Thalir Tech</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: #f9f9f9;
+      color: #333;
+    }
+
+    header {
+      background: #0a9396;
+      color: white;
+      padding: 20px 50px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header h1 {
+      font-size: 1.8rem;
+    }
+
+    nav a {
+      color: white;
+      margin-left: 20px;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    .product-container {
+      padding: 60px 40px;
+      max-width: 1100px;
+      margin: auto;
+      text-align: center;
+    }
+
+    .product-container h2 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+      color: #0a9396;
+    }
+
+    .product-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+      margin-top: 40px;
+    }
+
+    .card {
+      background: white;
+      padding: 30px 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card img {
+      width: 50px;
+      height: 50px;
+      margin-bottom: 15px;
+    }
+
+    .card h3 {
+      font-size: 1.3rem;
+      color: #005f73;
+      margin-bottom: 10px;
+    }
+
+    .card p {
+      font-size: 1rem;
+      line-height: 1.6;
+      color: #444;
+    }
+
+    .cta-button {
+      display: inline-block;
+      margin-top: 50px;
+      background: #0a9396;
+      color: white;
+      padding: 14px 28px;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 6px;
+    }
+
+    footer {
+      text-align: center;
+      background: #021f2b;
+      color: white;
+      padding: 20px;
+      margin-top: 60px;
+    }
+
+    .attribution {
+      font-size: 0.8rem;
+      color: #888;
+      text-align: center;
+      margin-top: 10px;
+    }
+
+    .attribution a {
+      color: #0a9396;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Our Products</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="products.html">Products</a>
+      <a href="partners.html">Partners</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main class="product-container">
+    <h2>Innovations from Thalir Tech</h2>
+
+    <div class="product-grid">
+      <div class="card">
+        <img src="https://cdn-icons-png.flaticon.com/512/2977/2977277.png" alt="Mastitis Icon" />
+        <h3>Mastitis Detection Machine</h3>
+        <p>Detect mastitis early using sensors and AI-based data to reduce economic loss and ensure cattle health.</p>
+      </div>
+
+      <div class="card">
+        <img src="https://cdn-icons-png.flaticon.com/512/1373/1373948.png" alt="Artificial Insemination Icon" />
+        <h3>Artificial Insemination Gun</h3>
+        <p>Precision-focused AI gun ensures safe, efficient and accurate insemination to improve herd genetics.</p>
+      </div>
+
+      <div class="card">
+        <img src="https://cdn-icons-png.flaticon.com/512/2388/2388087.png" alt="Cattle Biscuits Icon" />
+        <h3>Cattle Biscuits</h3>
+        <p>Nutritious feed supplement crafted with essential minerals to boost immunity and productivity.</p>
+      </div>
+
+      <div class="card">
+        <img src="https://cdn-icons-png.flaticon.com/512/14005/14005886.png" alt="Milk Quality Icon" />
+        <h3>AI-powered Milk Quality Tester</h3>
+        <p>Smart device that uses AI to test milk quality instantly — helping maintain safety & hygiene standards.</p>
+      </div>
+    </div>
+
+    <a class="cta-button" href="contact.html">🛍 Buy Now</a>
+
+    <div class="attribution">
+      Icons by 
+      <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from 
+      <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Thalir Tech. All rights reserved.</p>
+  </footer>
+</body>
+</html>
