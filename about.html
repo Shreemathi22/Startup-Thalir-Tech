@@ -16,19 +16,26 @@
     header {
       background: #0a9396;
       color: #fff;
-      padding: 20px 50px;
+      padding: 20px 30px;
       display: flex;
       justify-content: space-between;
       align-items: center;
+      flex-wrap: wrap;
     }
 
     header h1 {
       font-size: 1.8rem;
     }
 
+    nav {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
     nav a {
       color: #fff;
-      margin-left: 20px;
+      margin: 0 10px;
       text-decoration: none;
       font-weight: 500;
     }
@@ -64,6 +71,7 @@
       font-weight: bold;
       line-height: 1.2;
       margin-bottom: 25px;
+      text-align: center;
     }
 
     .highlight-text span {
@@ -92,6 +100,50 @@
       color: white;
       padding: 20px;
       margin-top: 50px;
+    }
+
+    /* ✅ Responsive styles for smaller screens */
+    @media (max-width: 768px) {
+      header {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      nav {
+        margin-top: 10px;
+        flex-direction: column;
+      }
+
+      nav a {
+        margin: 5px 0;
+      }
+
+      .about-title {
+        font-size: 2rem;
+      }
+
+      .highlight-text {
+        font-size: 1.5rem;
+        padding: 0 10px;
+      }
+
+      .section-block h2 {
+        font-size: 1.3rem;
+      }
+
+      .section-block p {
+        font-size: 1rem;
+      }
+
+      .about-container {
+        padding: 0 20px;
+        margin: 30px auto;
+      }
+
+      footer {
+        font-size: 0.9rem;
+        padding: 15px;
+      }
     }
   </style>
 </head>
