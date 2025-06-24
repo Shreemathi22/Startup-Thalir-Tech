@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Redirecting... | Thalir Tech</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f4f4f4;
+      color: #333;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      flex-direction: column;
+      text-align: center;
+    }
+
+    h2 {
+      color: #0a9396;
+    }
+
+    p {
+      font-size: 1.1rem;
+    }
+  </style>
+</head>
+<body>
+  <h2>Processing your search...</h2>
+  <p id="message">Please wait while we redirect you.</p>
+
+  <script>
+    const query = new URLSearchParams(window.location.search).get('q')?.toLowerCase().trim();
+
+    // Keyword-to-page routing map
+    const pageRoutes = {
+  "about": "about.html",
+  "contact": "contact.html",
+  "products": "products.html",
+  "partners": "partners.html",
+  "home": "index.html",
+  "research": "research.html"
+};
+
+
+    if (query && pageRoutes[query]) {
+      // Redirect if match found
+      window.location.href = pageRoutes[query];
+    } else {
+      // Fallback message
+      document.getElementById("message").textContent =
+        `No matching page found for "${query}". Please try again.`;
+    }
+  </script>
+</body>
+</html>
